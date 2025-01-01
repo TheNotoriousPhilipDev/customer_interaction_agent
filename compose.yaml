@@ -1,0 +1,13 @@
+services:
+  pgvector:
+    image: pgvector/pgvector:latest
+    environment:
+      POSTGRES_DB: cia_db
+      POSTGRES_PASSWORD: secret
+      POSTGRES_USER: postgres
+    ports:
+        - "5433:5432"
+
+
+
+
